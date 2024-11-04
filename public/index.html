@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Test</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import "./styles.css";
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+    </style>
+    <style>
+      /* Here I inititally attempted to add the following CSS as layers into tailwind, however due to reasons as to which I am unsure layers do not seem to be working in the environment */
+      .plus-jakarta-sans {
+        font-family: "Plus Jakarta Sans", serif !important;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+      }
+      .no-scrollbar {
+        scrollbar-width: none !important;
+      }
+      .card:hover .arrow-icon {
+        opacity: 1;
+      }
+
+      /* Horizontal Scroll */
+      .items {
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        transition: all 0.2s;
+        transform: scale(0.98);
+        will-change: transform;
+        user-select: none;
+        cursor: pointer;
+      } */
+
+      .items.active {
+        background: rgba(255, 255, 255, 0.3);
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+        transform: scale(1);
+      }
+
+   
+    </style>
+  </head>
+  <body class="bg-white font-sans lg:scroll-smooth plus-jakarta-sans">
+    <div>
+      <div>
+        <h1 class="font-body pl-10 text-3xl pt-4 font-bold">Section Title</h1>
+        <section
+          class="flex flex-nowrap overflow-x-auto snap-x snap-mandatory gap-1 px-1 no-scrollbar pb-5 pt-5 lg:cursor-move lg:scroll-smooth items h-screen"
+        >
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+          <div
+            class="w-full p-0 rounded flex-none flex snap-always snap-center lg:w-1/4"
+          >
+            <a
+              href="#"
+              class="card min-w-[40%] md:min-w-[24%] p-4 transition-transform transform hover:scale-105 cursor-pointer relative"
+            >
+              <div
+                class="relative flex items-center justify-center rounded-lg mb-2 overflow-hidden"
+              >
+                <img
+                  class="rounded-lg shadow-md"
+                  src="./assets/Placeholder-Image.png"
+                  alt="placeholder"
+                />
+                <div
+                  class="arrow-icon absolute bottom-2 right-2 bg-white mr-8 mb-8 p-3 rounded-full shadow-md opacity-0 transition-opacity duration-200"
+                >
+                  <svg
+                    src="./assets/Arrow.png"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-left text-lg font-medium font-body">Title</h3>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      const slider = document.querySelector(".items");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    </script>
+  </body>
+</html>
